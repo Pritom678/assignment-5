@@ -26,7 +26,7 @@
             </div>
             <div class="flex justify-center items-center md:gap-5 gap-2">
                 <div class="flex justify-center items-center gap-3 md:w-[123px] w-20 bg-[#41ff6b1a] rounded-full p-3">
-                    <span class="font-black md:text-lg text-[16px]">0</span>
+                    <span id="heart-count" class="font-black md:text-lg text-[16px]">0</span>
                     <img src="./assets/heart.png" alt="" class="md:w-8 w-5">
                 </div>
                 <div class="flex justify-center items-center gap-3 md:w-[123px] w-20 bg-[#41ff6b1a] rounded-full p-3">
@@ -49,13 +49,13 @@
     <main>
         <section class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-9">
             <section class="call-line col-span-7 md:col-span-9">
-                <div class="grid md:grid-cols-3 grid-cols-1 gap-5">
+                <div id='call-box' class="grid md:grid-cols-3 grid-cols-1 gap-5">
                     <div class="card bg-base-100 card-sm shadow-lg p-3 w-fit md:w-full">
                     <div class="flex justify-between items-center px-3">
                         <div class="bg-red-200 rounded-xl w-[50px] h-[50px] flex items-center justify-center">
                             <img src="./assets/emergency.png" alt="" class="w-[40px]">
                         </div>
-                        <i class="fa-regular fa-heart w-6"></i>
+                        <i class="fa-regular fa-heart w-6 btn-heart"></i>
                     </div>
                 <div class="card-body flex flex-col md:gap-6 gap-1">
                     <div class="flex flex-col gap-1">
@@ -77,7 +77,7 @@
                         <div class="bg-blue-200 rounded-xl">
                             <img src="./assets/police.png" alt="" class="w-[50px]">
                         </div>
-                        <i class="fa-regular fa-heart w-6"></i>
+                        <i class="fa-regular fa-heart w-6 btn-heart"></i>
                     </div>
                 <div class="card-body flex flex-col md:gap-6 gap-1">
                     <div class="flex flex-col gap-1">
@@ -99,7 +99,7 @@
                         <div class="bg-red-200 rounded-xl w-[50px] h-[50px] flex items-center justify-center">
                             <img src="./assets/fire-service.png" alt="" class="w-[40px]">
                         </div>
-                        <i class="fa-regular fa-heart w-6"></i>
+                        <i class="fa-regular fa-heart w-6 btn-heart"></i>
                     </div>
                 <div class="card-body flex flex-col md:gap-6 gap-1">
                     <div class="flex flex-col gap-1">
@@ -129,5 +129,6 @@
             </aside>
         </section>
     </main>
+    <script src="js/index.js"></script>
 </body>
 </html>

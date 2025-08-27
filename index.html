@@ -35,7 +35,7 @@
                     <img src="./assets/coin.png" alt="" class="md:w-8 w-5">
                 </div>
                 <div class="md:w-[123px] w-20 bg-[#00A63E] rounded-full p-3">
-                    <h2 class="font-semibold md:text-lg text-[16px] text-white text-center"><span>0</span> Copy</h2>
+                    <h2 class="font-semibold md:text-lg text-[16px] text-white text-center"><span id="copy-count">0</span> Copy</h2>
                 </div>
             </div>
         </nav>
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                     <div class="join w-full flex justify-center items-center gap-2">
-                        <button class="btn join-item w-1/2 rounded-lg border border-[#D4D6D5]"><i class="fa-regular fa-copy"></i>Copy</button>
+                        <button class="btn join-item w-1/2 rounded-lg border border-[#D4D6D5] copy-btn"><i class="fa-regular fa-copy"></i>Copy</button>
                         <button class="btn join-item w-1/2 rounded-lg bg-[#00A63E] text-white btn-call"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                 </div>
@@ -135,10 +135,10 @@
             <aside class="bg-white rounded-lg col-span-5 md:col-span-3">
                 <div class="flex justify-between items-center md:p-6 p-2">
                     <h1 class="font-bold md:text-lg text-sm"><i class="fa-regular fa-clock"></i>Call History</h1>
-                    <button class="btn join-item md:w-1/3 w-1/2 rounded-full bg-[#00A63E] text-white">Clear</button>
+                    <button id="clear-btn" class="btn join-item md:w-1/3 w-1/2 rounded-full bg-[#00A63E] text-white">Clear</button>
                 </div>
-                <div>
-
+                <div id="history-container">
+                    
                 </div>
             </aside>
         </section>

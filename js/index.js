@@ -32,6 +32,10 @@ getElement('call-box').addEventListener('click', function(e){
 
         alert(cardTitle + ' ' + cardNumber + ' calling....')
 
+        const now = new Date();
+
+        const localTime = now.toLocaleTimeString();
+
         const currentCoin = Number(coin) - 20;
         getElement('coin-count').innerText = currentCoin;
 
@@ -40,13 +44,13 @@ getElement('call-box').addEventListener('click', function(e){
         const newHistory = document.createElement('div');
 
         newHistory.innerHTML = `
-                    <div>
+                    <div class="flex justify-between items-center">
                         <div class="w-2/3 flex flex-col justify-center items-start gap-2 p-3">
                             <h1 class="md:font-bold font-semibold md:text-sm text-[10px]">${cardTitle}</h1>
                             <h1 class="md:font-semibold font-medium md:text-sm text-[10px]">${cardNumber}</h1>
                         </div>
-                        <div>
-                            
+                        <div class="p-1">
+                        <h1 class="md:font-bold font-medium md:text-sm text-[10px]">${localTime}</h1>
                         </div>
                     </div>
         `
@@ -87,3 +91,4 @@ getElement('clear-btn').addEventListener('click', function(){
     const history = getElement('history-container');
     history.innerHTML = '';
 })
+

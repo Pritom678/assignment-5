@@ -63,6 +63,8 @@ getElement('call-box').addEventListener('click', function(e){
         const currentCopy = Number(copy) + 1;
         getElement('copy-count').innerHTML = currentCopy;
 
+        const callButton = e.target.closest('.copy-btn');
+
         const cardTitle = callButton.parentNode.parentNode.children[0].children[0].children[0].innerText;
         
         const cardNumber = callButton.parentNode.parentNode.children[0].children[1].children[0].innerText;

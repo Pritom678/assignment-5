@@ -15,6 +15,7 @@ Answer: to create element in the DOM a specific method is use known as document.
 3. What is **Event Bubbling** and how does it work?
 
 Answer: Event Bubbling is a term when an event of an elements go upwards upto the root of tree where element parent is.
+
 4. What is **Event Delegation** in JavaScript? Why is it useful?
 
 Answer: An event delegation is a process where one eventListener handles multiple elements having same classname. It is useful because is takes less time to load if the same thing is done through loop the website will take alot of time to load.
